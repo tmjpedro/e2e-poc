@@ -1,0 +1,20 @@
+{
+  "private": true,
+  "dependencies": {},
+  "scripts": {
+    "cypress:version": "cypress version",
+    "cypress:verify": "cypress verify",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "cypress:run:record": "cypress run --record",
+    "cypress:run:chrome": "cypress run --browser chrome",
+    "cypress:run:headed": "cypress run --headed",
+    "lint": "eslint --fix tests/*/*.js"
+  },
+  "devDependencies": {
+    "cypress": "^3.1.1",
+    "eslint": "5.8.0",
+    "eslint-plugin-cypress-dev": "1.1.2",
+    "eslint-plugin-mocha": "5.2.0"
+  }
+}

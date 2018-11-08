@@ -1,0 +1,24 @@
+{
+  "name": "react-webdriverio-example",
+  "version": "0.0.1",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/klamping/react-webdriverio-example"
+  },
+  "author": "ME",
+  "license": "MIT",
+  "scripts": {
+    "test": "wdio",
+    "selenium-server": "node_modules/selenium-standalone/bin/selenium-standalone start"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jasmine": "3.3.0",
+    "wdio-jasmine-framework": "^0.3.7",
+    "wdio-selenium-standalone-service": "0.0.10",
+    "wdio-spec-reporter": "^0.1.5",
+    "webdriverio": "^4.14.0",
+    "selenium-standalone": "6.15.3"
+  }
+}

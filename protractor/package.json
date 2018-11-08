@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "test": "protractor protractor.conf.js",
+    "install": "webdriver-manager update"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "cucumber": "^5.0.2",
+    "protractor": "^5.4.1"
+  },
+  "devDependencies": {
+    "protractor-cucumber-framework": "^6.1.1"
+  }
+}
