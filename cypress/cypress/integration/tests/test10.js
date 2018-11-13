@@ -36,7 +36,7 @@ context(
 
 
     });*/
-
+/*
     it('user should be able to create a new app', () => {
       cy.get('button[type="button"]').first().click();
       cy.url().should('include', EDITOR_URL);
@@ -82,10 +82,32 @@ context(
         .trigger('mouseup', {force: true});
       cy.get('div[draggable="true"]').eq(0).contains('View2');
       cy.get('div[draggable="true"]').eq(1).contains('View1');
-    });
+    });*/
 
 
+    it('.click() - click on a DOM element', () => {
+      cy.get('button[type="button"]').first().click();
+      cy.url().should('include', EDITOR_URL);
+      //checking default
+      cy.wait(5000);
+      cy.get('div[data-test="cellPosition"]').contains('A1');
 
+      /*cy.get('canvas')
+        .click(32, 32)
+        .click(32, 32)
+      //  .type('bla bla');
+      cy.get('div[data-test="cellPosition"]').contains('A1');
+      //cy.get('span[data-test="formulaValue"]').contains('bla bla');
+      */cy.get('.hypergrid')
+        .click(132, 132)
+        .click(132, 132)
+      cy.get('div[data-test="cellPosition"]').contains('B1');
+      cy.get('.hypergrid')
+        .click(64, 132)
+        .click(64, 132);
+      cy.get('div[data-test="cellPosition"]').contains('B2');
+
+    })
   },
   timeout
 )
