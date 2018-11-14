@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "test": "testcafe chrome test.js"
+  },
+  "devDependencies": {
+    "testcafe": "*",
+    "testcafe-react-selectors": "3.0.0"
+  }
+}
